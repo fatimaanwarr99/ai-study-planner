@@ -70,7 +70,7 @@ ai-study-planner/
 │   └── server.js
 │
 └── README.md
-
+```
 
 ## Screenshots
 
