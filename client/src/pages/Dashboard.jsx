@@ -43,7 +43,7 @@ const [analyticsLoading, setAnalyticsLoading] = useState(true)
     const loadProfile = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/auth/profile/${user?.id}`,
+          `http://https://ai-study-planner-delta-ochre.vercel.app/api/auth/profile/${user?.id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -58,7 +58,7 @@ const [analyticsLoading, setAnalyticsLoading] = useState(true)
 
           // Load today's saved study plan
           const planResponse = await fetch(
-            'http://localhost:5000/api/study-plan/today',
+            'http://https://ai-study-planner-delta-ochre.vercel.app/api/study-plan/today',
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -102,7 +102,7 @@ const loadAnalytics = async () => {
     setAnalyticsLoading(true)
 
     const response = await fetch(
-      'http://localhost:5000/api/analytics',
+      'http://https://ai-study-planner-delta-ochre.vercel.app/api/analytics',
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -135,7 +135,7 @@ const loadAnalytics = async () => {
 
     try {
       const response = await fetch(
-        'http://localhost:5000/api/study-plan/generate',
+        'http://https://ai-study-planner-delta-ochre.vercel.app/api/study-plan/generate',
         {
           method: 'POST',
           headers: {
@@ -173,7 +173,7 @@ await loadAnalytics()
   ) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/study-plan/task/${planId}/${taskId}`,
+        `http://https://ai-study-planner-delta-ochre.vercel.app/api/study-plan/task/${planId}/${taskId}`,
         {
           method: 'PATCH',
           headers: {
@@ -295,7 +295,7 @@ await loadAnalytics()
 
     try {
       const response = await fetch(
-        'http://localhost:5000/api/auth/profile',
+        'http://https://ai-study-planner-delta-ochre.vercel.app/api/auth/profile',
         {
           method: 'POST',
           headers: {

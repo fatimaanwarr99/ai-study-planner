@@ -23,7 +23,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        'http://localhost:5000/api/auth/register',
+        'http://https://ai-study-planner-delta-ochre.vercel.app/api/auth/register',
         {
           method: 'POST',
           headers: {

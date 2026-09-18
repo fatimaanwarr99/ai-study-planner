@@ -17,7 +17,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await fetch(
-      'http://localhost:5000/api/auth/login',
+      'http://https://ai-study-planner-delta-ochre.vercel.app/api/auth/login',
       {
         method: 'POST',
         headers: {
