@@ -72,4 +72,22 @@ ai-study-planner/
 └── README.md
 
 
+## Screenshots
 
+### Login
+
+![StudyFlow Login](screenshots/login.png)
+
+### Register
+
+![StudyFlow Register](screenshots/register.png)
+
+### Dashboard
+
+![StudyFlow Dashboard](screenshots/dashboard.png)
+
+### Analytics
+
+![StudyFlow Analytics](screenshots/analytics.png)
+
+![StudyFlow Analytics Details](screenshots/analytics-details.png)
