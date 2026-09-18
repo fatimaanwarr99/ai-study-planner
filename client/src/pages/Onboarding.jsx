@@ -51,7 +51,7 @@ function Onboarding() {
 
     try {
       const response = await fetch(
-        'http://https://ai-study-planner-delta-ochre.vercel.app/api/auth/profile',
+        'https://ai-study-planner-delta-ochre.vercel.app/api/auth/profile',
         {
           method: 'POST',
           headers: {
