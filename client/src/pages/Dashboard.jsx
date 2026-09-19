@@ -386,7 +386,7 @@ await loadAnalytics()
     onClick={() => {
       localStorage.removeItem('token')
       localStorage.removeItem('user')
-      window.location.href = '/login'
+    window.location.href = '/'
     }}
   >
     <LogOut size={17} />
