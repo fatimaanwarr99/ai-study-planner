@@ -26,7 +26,7 @@ function Analytics() {
     const loadAnalytics = async () => {
       try {
         const response = await fetch(
-          'http://ai-study-planner-delta-ochre.vercel.app/api/analytics',
+          'https://ai-study-planner-delta-ochre.vercel.app/api/analytics',
           {
             headers: {
               Authorization: `Bearer ${token}`,
