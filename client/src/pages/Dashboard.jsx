@@ -36,7 +36,7 @@ const [analyticsLoading, setAnalyticsLoading] = useState(true)
 
   useEffect(() => {
     if (!token) {
-      window.location.href = '/login'
+      window.location.href = '/'
       return
     }
 
@@ -75,14 +75,14 @@ const [analyticsLoading, setAnalyticsLoading] = useState(true)
           } else if (planResponse.status === 401) {
             localStorage.removeItem('token')
             localStorage.removeItem('user')
-            window.location.href = '/login'
+           window.location.href = '/'
             return
           }
           await loadAnalytics()
         } else if (response.status === 401) {
           localStorage.removeItem('token')
           localStorage.removeItem('user')
-          window.location.href = '/login'
+       window.location.href = '/'
         }
       } catch (error) {
         console.error('Error loading profile:', error)
